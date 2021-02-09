@@ -97,7 +97,7 @@ while(newAttempts){
     newAttempts-=1;
     alert('Wrong letter... you have ' + newAttempts + ' attempts left!');
     if(!newAttempts){
-      alert('No more attempts.. correct answer is ' + ali + '!');
+      alert('The correct answer is ' + ali + '!');
       break;
     }
   }
