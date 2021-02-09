@@ -9,6 +9,9 @@ if((gender.toLowerCase() === 'yes') || (gender.toLowerCase() === 'y')){
   alert('Too bad... wrong answer!');
 }
 
+// let coding = prompt('Do I love coding?').toLowerCase();
+// this way the variable is automatically lowerized
+
 let coding = prompt('Do I love coding?');
 if((coding.toLowerCase() === 'yes') || (coding.toLowerCase() === 'y')){
   // console.log('correct answer!');
@@ -47,3 +50,12 @@ if((peanutButter.toLowerCase() === 'yes') || (peanutButter.toLowerCase() === 'y'
 
 let userName = prompt('What is your name, dear visitor?');
 alert('Thank you for visiting my humble website, ' + userName + ' :)');
+
+// switch (key) {
+  // case value:
+  // case anotherValue: //this way we can have two values without repetition 
+    // break;
+
+  // default:
+    // break;
+// }
