@@ -4,3 +4,13 @@ body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
+
+main ul {
+    margin-top: 100px;
+    list-style-position: inside;
+}
+
+main ol {
+    list-style-position: inside;
+    margin-top: 100px;
+}
