@@ -1,8 +1,8 @@
 'use strict';
 
 let corAnswer=0;
+
 function qOne() {
-  
   let gender = prompt('If my name is Ali, am I a male?');
   if((gender.toLowerCase() === 'yes') || (gender.toLowerCase() === 'y')){
     // console.log('correct answer, I am male!');
@@ -14,10 +14,11 @@ function qOne() {
   }
 }
 qOne();
+
 // let coding = prompt('Do I love coding?').toLowerCase();
 // this way the variable is automatically lowerized
+
 function qTwo() {
-  
   let coding = prompt('Do I love coding?');
   if((coding.toLowerCase() === 'yes') || (coding.toLowerCase() === 'y')){
     // console.log('correct answer!');
@@ -31,7 +32,6 @@ function qTwo() {
 qTwo();
 
 function qThree() {
-  
   let age = prompt('Am I 30 years old?');
   if((age.toLowerCase() === 'no') || (age.toLowerCase() === 'n')){
     // console.log('Good guess, I am 27!');
@@ -45,7 +45,6 @@ function qThree() {
 qThree();
 
 function qFour() {
-  
   let water = prompt('Is water my favorite juice?');
   if((water.toLowerCase() === 'no') || (water.toLowerCase() === 'n')){
     // console.log('Good guess, water is not a juice!');
@@ -71,12 +70,10 @@ function qFive() {
 }
 qFive();
 
-
 let userName = prompt('What is your name, dear visitor?');
 alert('Thank you for visiting my humble website, ' + userName + ', but we are not done yet :)');
 
 function qSix() {
-  
   let attempts=4;
   while(attempts){
     let guess=prompt('Guess a number from 1 to 10!');
@@ -102,6 +99,7 @@ function qSix() {
   }
 }
 qSix();
+
 // This solution works, but not practical for large arrays
 // let ali=['a', 'l', 'i'];
 // let newAttempts=6;
@@ -120,8 +118,8 @@ qSix();
 //     }
 //   }
 // }
+
 function qSeven() {
-  
   let ali=['a', 'l', 'i'];
   let newAttempts=6;
   let loopBreak;
