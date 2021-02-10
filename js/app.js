@@ -104,18 +104,26 @@ while(attempts){
 
 let ali=['a', 'l', 'i'];
 let newAttempts=6;
+let loopBreak;
 while(newAttempts){
   let newGuess = prompt('Guess a letter from my name!').toLowerCase();
   for (let i = 0; i < ali.length; i++) {
     if (newGuess === ali[i]){
       alert('Correct answer! \'' + newGuess + '\' is part of \'ali\'');
       corAnswer++;
+      loopBreak = i;
+      break;
     }
   }
   newAttempts-=1;
-  alert('Wrong letter... you have ' + newAttempts + ' attempts left!');
-  if(!newAttempts){
-    alert('The correct answer is ' + ali + '!');
+  if(newGuess === ali[loopBreak]){
+    break;
+  } else {
+    alert('Wrong letter... you have ' + newAttempts + ' attempts left!');
+    if(!newAttempts){
+      alert('The correct answer is ' + ali + '!');
+      break;
+    }
   }
 }
 
