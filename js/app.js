@@ -59,11 +59,9 @@ let userName = prompt('What is your name, dear visitor?');
 alert('Thank you for visiting my humble website, ' + userName + ', but we are not done yet :)');
 
 
-
-
 let attempts=4;
 while(attempts){
-  let guess=prompt('Guess a number from 1 to 10! You have ' + attempts + ' attempts!');
+  let guess=prompt('Guess a number from 1 to 10!');
   if (guess==='5'){
     alert('Correct answer... it is 5!');
     corAnswer++;
@@ -85,21 +83,39 @@ while(attempts){
   }
 }
 
+// This solution works, but not practical for large arrays
+// let ali=['a', 'l', 'i'];
+// let newAttempts=6;
+// while(newAttempts){
+//   let newGuess = prompt('Guess a letter from my name! you have ' + newAttempts + ' attempts!').toLowerCase();
+//   if ((newGuess=== 'a') || (newGuess=== 'l') || (newGuess=== 'i')){
+//     alert('Correct answer! \'' + newGuess + '\' is part of \'ali\'');
+//     corAnswer++;
+//     break;
+//   } else{
+//     newAttempts-=1;
+//     alert('Wrong letter... you have ' + newAttempts + ' attempts left!');
+//     if(!newAttempts){
+//       alert('The correct answer is ' + ali + '!');
+//       break;
+//     }
+//   }
+// }
+
 let ali=['a', 'l', 'i'];
 let newAttempts=6;
 while(newAttempts){
-  let newGuess = prompt('Guess a letter from my name! you have ' + newAttempts + ' attempts!').toLowerCase();
-  if ((newGuess=== 'a') || (newGuess=== 'l') || (newGuess=== 'i')){
-    alert('Correct answer! \'' + newGuess + '\' is part of \'ali\'');
-    corAnswer++;
-    break;
-  } else{
-    newAttempts-=1;
-    alert('Wrong letter... you have ' + newAttempts + ' attempts left!');
-    if(!newAttempts){
-      alert('The correct answer is ' + ali + '!');
-      break;
+  let newGuess = prompt('Guess a letter from my name!').toLowerCase();
+  for (let i = 0; i < ali.length; i++) {
+    if (newGuess === ali[i]){
+      alert('Correct answer! \'' + newGuess + '\' is part of \'ali\'');
+      corAnswer++;
     }
+  }
+  newAttempts-=1;
+  alert('Wrong letter... you have ' + newAttempts + ' attempts left!');
+  if(!newAttempts){
+    alert('The correct answer is ' + ali + '!');
   }
 }
 
