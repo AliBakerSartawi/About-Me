@@ -1,16 +1,43 @@
 body {
-    background-color: black;
-    color: blanchedalmond;
+    background-color: #000408;
+    color: #0CCD58;
     font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
     text-align: center;
 }
 
+h1 {
+    color: #000408;
+    background-color: #0CCD58;
+    font-weight: 500;
+    font-size: 50px;
+    padding: 15px 0 15px 0;
+    margin-bottom: 50px;
+}
+
+#paragraph {
+    width: 700px;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+
 main ul {
-    margin-top: 100px;
+    margin-top: 3%;
     list-style-position: inside;
+    list-style-type: disc;
 }
 
 main ol {
     list-style-position: inside;
-    margin-top: 100px;
+    margin-top: 3%;
+    list-style-type: decimal;
+}
+
+footer {
+    background-color: #0CCD58;
+    color: #000408;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 25px 0 25px 0;
 }
